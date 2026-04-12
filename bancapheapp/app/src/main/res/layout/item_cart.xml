@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="@color/white">
+
+        <!-- Hình ảnh cà phê -->
+        <ImageView
+            android:id="@+id/imgCoffee"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/rounded_corner"
+            android:clipToOutline="true"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Tên và Giá -->
+        <TextView
+            android:id="@+id/txtCoffeeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên cà phê"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:background="@color/white"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/txtCoffeePrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/coffee_dark"
+            android:background="@color/white"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Số lượng + Bỏ chọn món -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="6dp"
+            android:background="@color/white">
+
+            <!-- Nút giảm -->
+            <ImageButton
+                android:id="@+id/btnDecreaseCart"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_giam"
+                android:background="@android:color/transparent"
+                android:padding="6dp"
+                android:contentDescription="Giảm" />
+
+            <!-- Số lượng -->
+            <TextView
+                android:id="@+id/txtQuantity"
+                android:layout_width="48dp"
+                android:layout_height="36dp"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:background="@android:color/white"
+                android:layout_marginHorizontal="8dp"/>
+
+            <!-- Nút tăng -->
+            <ImageButton
+                android:id="@+id/btnIncreaseCart"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_tang"
+                android:background="@android:color/transparent"
+                android:padding="6dp"
+                android:contentDescription="Tăng" />
+
+            <!-- Nút xóa -->
+            <ImageButton
+                android:id="@+id/btnRemoveFromCart"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_xoa"
+                android:background="@android:color/transparent"
+                android:contentDescription="Xóa khỏi giỏ"
+                android:layout_marginStart="16dp"
+                android:padding="6dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

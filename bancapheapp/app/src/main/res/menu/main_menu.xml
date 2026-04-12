@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_cart"
+        android:title="Xem giỏ hàng"/>
+    <item
+        android:id="@+id/menu_history"
+        android:title="Lịch sử đặt hàng"/>
+    <item
+        android:id="@+id/menu_map"
+        android:title="Xem bản đồ"/>"
+    <item
+        android:id="@+id/menu_logout"
+        android:title="Đăng xuất"/>
+</menu>

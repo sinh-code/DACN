@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF8E1">
+
+    <!-- Coffee Image Section -->
+    <ImageView
+        android:id="@+id/img_coffee_hero"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/coffee_hero_image"
+        android:contentDescription="Coffee Hero Image" />
+
+    <!-- Login Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/login_background"
+        android:padding="32dp"
+        android:layout_marginTop="-40dp">
+
+        <!-- Welcome Text -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng ký tài khoản"
+            android:textSize="28sp"
+            android:textColor="#3E2723"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng ký để sử dụng dịch vụ của chúng tôi!"
+            android:textSize="16sp"
+            android:textColor="#6D4C41"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Email Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:boxBackgroundColor="#FFF"
+            app:boxStrokeColor="#8D6E63"
+            app:hintTextColor="#6D4C41">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etRegisterUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tên người dùng"
+                android:inputType="textEmailAddress"
+                android:textColor="#3E2723"
+                android:textColorHint="#A1887F" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Password Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:boxBackgroundColor="#FFF"
+            app:boxStrokeColor="#8D6E63"
+            app:hintTextColor="#6D4C41"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#6D4C41">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etRegisterPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mật khẩu"
+                android:inputType="textPassword"
+                android:textColor="#3E2723"
+                android:textColorHint="#A1887F" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="ĐĂNG KÝ"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:backgroundTint="@color/brown"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

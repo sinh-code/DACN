@@ -1,0 +1,23 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_dashboard"
+        android:title="Dashboard"
+        android:icon="@drawable/ic_dashboard"/>
+    <item
+        android:id="@+id/menu_admin_history"
+        android:title="History"
+        android:icon="@drawable/ic_history"/>
+    <item
+        android:id="@+id/menu_manage_users"
+        android:title="Nhân viên/Shipper"
+        android:icon="@drawable/ic_edit"/>
+    <item
+        android:id="@+id/menu_add_coffee"
+        android:title="Tạo Cafe"
+        android:icon="@drawable/ic_add"/>
+    <item
+        android:id="@+id/menu_logout"
+        android:title="Đăng xuất"
+        android:icon="@drawable/ic_logout"/>
+</menu>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Hình ảnh cà phê -->
+        <ImageView
+            android:id="@+id/coffeeImageAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:background="@color/coffee_light"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Tên + Giá -->
+        <TextView
+            android:id="@+id/txtCoffeeNameAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên Coffee"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/coffee_dark"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:id="@+id/txtCoffeePriceAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="25.000₫"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Nút Sửa & Xóa -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="4dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEditCoffee"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:text="Sửa"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                app:backgroundTint="@color/coffee_brown"
+                app:icon="@drawable/ic_edit"
+                app:iconTint="@android:color/white"
+                android:minHeight="0dp"
+                android:paddingHorizontal="4dp"
+                android:layout_marginEnd="4dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDeleteCoffee"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:text="Xóa"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                app:backgroundTint="@color/red_delete"
+                app:icon="@drawable/delete"
+                app:iconTint="@android:color/white"
+                android:minHeight="0dp"
+                android:paddingHorizontal="4dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

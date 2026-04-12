@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="#D6C0B3">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="120dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Logo Coffee"
+        android:src="@drawable/logo_coffee" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/brown"
+        android:hint="Tên Coffee"
+        android:padding="12dp"
+        android:textColor="#000"
+        android:textColorHint="#A1887F"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/editTextPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/brown"
+        android:hint="Giá Coffee"
+        android:padding="12dp"
+        android:textColor="#000"
+        android:textColorHint="#A1887F"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/brown"
+        android:hint="Số lượng"
+        android:padding="12dp"
+        android:textColor="#000"
+        android:textColorHint="#A1887F"
+        android:inputType="number" />
+
+    <!-- 🔥 EditText Mô tả mới thêm -->
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/brown"
+        android:hint="Mô tả"
+        android:padding="8dp"
+        android:textColor="#000"
+        android:textColorHint="#A1887F"
+        android:inputType="textMultiLine"
+        android:minLines="2"
+        android:gravity="top"/>
+
+    <ImageView
+        android:id="@+id/imageViewCoffeeImage"
+        android:layout_width="281dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray"
+        android:contentDescription="Selected Coffee Image"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/buttonSelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/brown"/>
+
+    <Button
+        android:id="@+id/btnSaveCoffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/brown"
+        android:text="Lưu"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

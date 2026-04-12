@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="brown">#6F4E37</color>
+    <color name="item_brown">#8a715b</color>
+    <color name="background_color">#F5F5F5</color>
+    <color name="coffee_medium">#8D6E63</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#FDD835</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="accent_color">#FF6B35</color>
+    <color name="coffee_brown">#795548</color>        <!-- Nâu cà phê chính -->
+    <color name="coffee_dark">#5D4037</color>         <!-- Nâu đậm (chữ) -->
+    <color name="coffee_light">#D7CCC8</color>        <!-- Nâu nhạt (nền item) -->
+    <color name="red_delete">#D32F2F</color>
+</resources>

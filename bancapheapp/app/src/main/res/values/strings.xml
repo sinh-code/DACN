@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Coffee House</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="label_user">User:</string>
+    <string name="label_date">Ngày đặt:</string>
+    <string name="label_items">Món đã chọn:</string>
+    <string name="label_total">Tổng tiền:</string>
+    <string name="action_logout">Đăng xuất</string>
+    <string name="logout_success">Đã đăng xuất</string>
+</resources>
