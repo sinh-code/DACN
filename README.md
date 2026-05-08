@@ -71,6 +71,7 @@ git clone https://github.com/sinh-code/DACN.git
 * Mở bằng Android Studio / VS Code
 * Cài dependencies
 * Run app trên emulator hoặc thiết bị thật
+* Tài khoản Admin:  tên đăng nhâp:admin, mật khẩu:123456
 
 
 ## 🧪 Kiểm thử
